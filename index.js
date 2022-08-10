@@ -1,15 +1,6 @@
 var readlineSync = require('readline-sync');
 var chalk = require('chalk');
 
-/** --- Quiz: The Kapil Sharma Show  ----
- * Features:
- ** WELCOME: Game will first ask your name & welcome you.
- ** OPTIONS: Instead of typing out the entire answer, user only need to select from the 4 options(a, B, c or D).
- ** SCORE: Based upon your correct answers in the quiz, it will auto update your scores (1 score for each correct answer).
- ** COLORFUL UI: Greeetings, score and important alerts have customised colors other than just boring white one.
- ** HIGHEST SCORE: It willprint the top 5 highest scores & will also let you know, if you were able to beat the already highest scores of other users.
- */
-
 // // DATABASE
 const highestScores = [
   {
@@ -213,13 +204,6 @@ newHighest
         '\nNot Bad huh! 😏\nYou can always replay to beat the highest scores. Good Luck :)'
       )
     );
-
-/**----- EXTRA FEATURES (to be implemented)------
- * Ask the user if the LEVEL OF DIFFICULTY at the start (easy: only increment the score, difficult: will also result in reduction of the score)
- * MUTIPLE LEVELS: level 1 (answer 5 correct questions), level 2 (anser 10 correct questions)
- * Ask user to type again, if anything other than abcd typed. We can also give them an option to calculate.
- * Ask them, if they want to update their score and update their score right away in database, and print the new list.
- */
 
 /* Quiz Questions (19)
 
